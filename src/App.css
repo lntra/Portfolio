@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 .App {
   text-align: center;
 }
@@ -5,6 +11,137 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+@keyframes scaleUp {
+  0% {
+      transform: scale(0.1);
+  }
+  50% {
+      transform: scale(2); 
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.li-animate {
+  animation: scaleUp 0.5s ease forwards; 
+}
+
+@keyframes divAnimate {
+  0% {
+      transform: scale(0.5);
+  }
+  50% {
+      transform: scale(1.5); 
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.div-animate {
+  animation: divAnimate 0.8s ease forwards; 
+}
+
+@keyframes realPage {
+  0% {
+    width: 25%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes behindPage {
+  0% {
+    width: 50%;
+    height: 2px;
+  }
+  100% {
+    width: 25%;
+    height: 1px;
+  }
+}
+
+.scaledown {
+  animation: behindPage 0.5s ease-out forwards; 
+}
+
+.scaleup {
+  animation: realPage 0.5s ease forwards; 
+}
+
+.page-container {
+  transition: transform 0.5s ease;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOutDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOutUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100vh);
+  }
+}
+
+.gradient {
+  background: linear-gradient(87deg, rgba(208,0,0,1) 0%, rgba(106,4,15,1) 100%);  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.rotated-text {
+  transform: rotate(0deg);
+  transform-origin: center;
+  writing-mode: vertical-lr;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.page-container.slide-in-up {
+  animation: slideInUp 0.5s ease forwards;
+}
+
+.page-container.slide-out-up {
+  animation: slideOutUp 0.5s ease forwards;
+}
+
+.page-container.slide-in-down {
+  animation: slideInDown 0.5s ease forwards;
+}
+
+.page-container.slide-out-down {
+  animation: slideOutDown 0.5s ease forwards;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,6 +159,37 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+                 0 0 10px rgba(255, 255, 255, 0.8),
+                 0 0 15px rgba(255, 255, 255, 0.8),
+                 0 0 20px rgba(255, 255, 255, 0.6),
+                 0 0 25px rgba(255, 255, 255, 0.4);
+    opacity: 0.7;
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1),
+                 0 0 20px rgba(255, 255, 255, 1),
+                 0 0 30px rgba(255, 255, 255, 0.8),
+                 0 0 40px rgba(255, 255, 255, 0.5),
+                 0 0 50px rgba(255, 255, 255, 0.3);
+    opacity: 1;
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+                 0 0 10px rgba(255, 255, 255, 0.8),
+                 0 0 15px rgba(255, 255, 255, 0.8),
+                 0 0 20px rgba(255, 255, 255, 0.6),
+                 0 0 25px rgba(255, 255, 255, 0.4);
+    opacity: 0.7;
+  }
+}
+
+.glow-text {
+  animation: glow 5s infinite alternate;
 }
 
 .App-link {
