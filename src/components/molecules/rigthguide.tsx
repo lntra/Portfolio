@@ -69,7 +69,7 @@ const RightGuide = ({portugues , setCurrentPage, currentPage, scrollData} : Righ
 
     return <>
         <div className="block lg:hidden">
-            <LeftGuide></LeftGuide>
+            <LeftGuide portugues={portugues}></LeftGuide>
         </div>
         <div className="w-full h-full pr-0 lg:pr-7">
             <div className="grid grid-cols-12 grid-rows-5 bg-black border-[1px] border-white w-full h-full rounded-3xl">
