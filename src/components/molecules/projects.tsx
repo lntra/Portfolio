@@ -77,7 +77,7 @@ const Projects = ({portugues , currentPage , setCurrentPage, scrollData} : Right
                         </h1>
                         <div className="flex flex-col w-full h-full align-middle justify-self-center justify-center border-[2px] border-white">
                             <ul className="h-full p-2 grid grid-cols-9 lg:grid-cols-12 grid-rows-2 w-full text-lg justify-center">
-                                <a href='' className='group row-start-1 row-end-1 col-span-12  sm:col-span-5 lg:col-start-1 lg:col-end-7 h-full w-full'>
+                                <a href='https://sound-space-q9ggssc3l-intras-projects.vercel.app' className='group row-start-1 row-end-1 col-span-12  sm:col-span-5 lg:col-start-1 lg:col-end-7 h-full w-full'>
                                     <div className='w-full h-full flex justify-end'>
                                         <img className='grayscale-[1] object-cover  transition-all duration-300 ease-in-out group-hover:grayscale-0 border-b-[1px] z-10 lg:h-[90%] rounded-3xl border-r-[1px] border-white' src={soundspacealt} alt="" />
                                         <div 
@@ -86,7 +86,7 @@ const Projects = ({portugues , currentPage , setCurrentPage, scrollData} : Right
                                     </div>
                                 </a>   
                                 <div className='col-start-1 p-1 col-end-12 row-start-2 row-end-2 lg:row-start-1 lg:row-end-1 lg:p-7 lg:col-start-6 z-20 lg:col-end-13 h-full w-full flex align-middle items-center'>
-                                    <a href='' className='w-full h-fit bg-pf-crimsonbg border-b-2 border-pf-darkestred rounded-3xl'
+                                    <a href='https://sound-space-q9ggssc3l-intras-projects.vercel.app' className='w-full h-fit bg-pf-crimsonbg border-b-2 border-pf-darkestred rounded-3xl'
                                     style={{ backgroundColor: 'rgba(55, 6, 23, 0.9)' }}
                                     >
                                         <div className='flex opacity-100 flex-col h-full justify-center align-top items-start p-4'>
