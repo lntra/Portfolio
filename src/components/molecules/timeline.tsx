@@ -67,7 +67,7 @@ const Timeline = ({portugues , currentPage , setCurrentPage, scrollData} : Right
                     </ul>
                 </div>
                 <div className="text-white row-start-2 row-end-7 col-start-2 col-end-12">
-                        <h1 className="absolute top-[14.5%] left-[20%] text-2xl transform -translate-x-1/2 -translate-y-1/2 bg-black px-3 py-3 text-white font-bold">
+                        <h1 className="absolute top-[14.5%] left-[28%] sm:left-[20%] text-2xl transform -translate-x-1/2 -translate-y-1/2 bg-black px-3 py-3 text-white font-bold">
                             {portugues ? "<Linha do Tempo/>" : "<Timeline/>"}
                         </h1>
                         <div className="flex flex-col w-full h-full align-middle justify-self-center justify-center border-[2px] border-white">
@@ -104,7 +104,7 @@ const Timeline = ({portugues , currentPage , setCurrentPage, scrollData} : Right
                                         <p className='text-xs sm:text-base'>{portugues ? "Lógica de Programação" : "Logic programming"}</p>
                                         <p className='text-xs sm:text-base'>{portugues ? "Javascript" : "Javascript"}</p>
                                         <p className='text-xs sm:text-base'>{portugues ? "HTML5 e CSS3" : "HTML5 & CSS3"}</p>
-                                        <p className='text-xs sm:text-base'>{portugues ? "Arquitetura de Computadores" : "Computer architecture"}</p>
+                                        <p className='hidden sm:block text-xs sm:text-base'>{portugues ? "Arquitetura de Computadores" : "Computer architecture"}</p>
                                     </div>
                                     
                                 </div>    

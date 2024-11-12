@@ -7,18 +7,18 @@ interface LeftGuideProps {
 const LeftGuide = ( {portugues} : LeftGuideProps ) => {
 
     return <>
-        <div className="absolute w-[90vw] sm:w-[70vw] md:w-[50vw] bottom-0 right-0 lg:w-full lg:relative lg:h-full pl-0 lg:pl-7">
+        <div className="absolute w-[100vw] sm:w-[70vw] md:w-[50vw] bottom-12 sm:bottom-0 right-0 lg:w-full lg:relative lg:h-full pl-0 lg:pl-7">
             <div className="bg-black border-[1px] border-white w-full h-full rounded-3xl grid grid-rows-4">
                 <div className="row-span-5 lg:row-start-2 lg:row-end-4">
                     <div className="h-full w-full gap-2 grid auto-rows-auto auto-cols-auto p-0 xl:p-4 2xl:p-7">
-                        <div className="flex justify-center items-center w-full row-start-1 row-end-1 col-start-1 col-end-1">
+                        <div className="justify-center hidden sm:flex items-center w-full row-start-1 row-end-1 col-start-1 col-end-1">
                             <div className="w-24 h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 max-w-32 max-h-32 aspect-square bg-blue-400 relative rounded-full">
                                 <img className='w-full h-full rounded-full object-cover' src={photo} alt="" />
                                 <div className="absolute inset-0 bg-pf-red mix-blend-multiply opacity-35 pointer-events-none"></div>
                             </div>
                         </div>
-                        <div className="row-start-1 row-end-1 col-start-2 col-end-2">
-                            <div className="flex flex-col items-start justify-center h-full">
+                        <div className="row-start-1 row-end-1 col-start-1 col-end-3 sm:col-start-2 sm:col-end-2">
+                            <div className="flex flex-col items-center sm:items-start justify-center h-full">
                                 <div>
                                     <h1 className={`text-4xl xl:text-5xl 2xl:text-6xl gradient font-bold pl-0 xl:pl-2 text-left`}>Fernando Araújo</h1>
                                 </div>
@@ -26,13 +26,13 @@ const LeftGuide = ( {portugues} : LeftGuideProps ) => {
                                     <svg className='hidden xl:block' width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M16 5.33334C12.2667 5.33334 9.33334 8.26667 9.33334 12C9.33334 15.7333 14.6667 26.6667 16 26.6667C17.3333 26.6667 22.6667 15.7333 22.6667 12C22.6667 8.26667 19.7333 5.33334 16 5.33334ZM16 16C13.7333 16 12 14.2667 12 12C12 9.73334 13.7333 8 16 8C18.2667 8 20 9.73334 20 12C20 14.2667 18.2667 16 16 16Z" fill="white"/>
                                     </svg>
-                                    <h1 className="text-lg text-left">Rio de Janeiro, Brasil</h1>
+                                    <h1 className="text-base sm:text-lg text-left">Rio de Janeiro, Brasil</h1>
                                 </div>
                             </div>
                         </div>
                         <div className="row-start-2 row-end-2 col-span-2">
                             <div className="flex flex-col justify-center align-middle bg-pf-crimsonbg h-full w-full border-l-[3px] px-7 border-pf-darkestred">
-                                <p className="font-light">
+                                <p className="font-light text-sm sm:text-base">
                                     {portugues 
                                     ? "Apaixonado por tecnologia, exploro o campo de TI desde cedo. Sempre em busca de novos desafios, aprimoro minhas habilidades em projetos diversos para evoluir como profissional." 
                                     : "Passionate about technology, I've been exploring the field of IT from an early age. Continuously seeking new challenges, I hone my skills through diverse projects to grow as a professional." 

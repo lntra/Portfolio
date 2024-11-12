@@ -72,8 +72,8 @@ const RightGuide = ({portugues , setCurrentPage, currentPage, scrollData} : Righ
             <LeftGuide portugues={portugues}></LeftGuide>
         </div>
         <div className="w-full h-full pr-0 lg:pr-7">
-            <div className="grid grid-cols-12 grid-rows-5 bg-black border-[1px] border-white w-full h-full rounded-3xl">
-                <div className="row-start-1 row-end-1 col-span-12">
+            <div className="grid grid-cols-12 grid-rows-6 sm:grid-rows-5 bg-black border-[1px] border-white w-full h-full rounded-3xl">
+                <div className="hidden sm:block sm:row-start-1 sm:row-end-1 col-span-12">
                     <ul className="flex py-4 font-semibold justify-evenly text-white">
                         <li className={`cursor-pointer transition-colors duration-200 hover:text-pf-red ${animate1 ? 'li-animate' : ''}`} onClick={() => handleNav(1)}>
                             {portugues ? "Início" : "Home"}
@@ -89,7 +89,7 @@ const RightGuide = ({portugues , setCurrentPage, currentPage, scrollData} : Righ
                         </li>
                     </ul>
                 </div>
-                <div className="row-start-2 row-end-2 col-span-12">
+                <div className="row-start-2 row-end-2 sm:row-start-2 sm:row-end-2 col-span-12">
                         <div className="flex gap-3 flex-col w-full h-full align-middle justify-self-center justify-center">
                             <h1 className="text-5xl font-bold">{portugues ? "Bem vindo ao meu portfólio" : "Welcome to my portfolio"}</h1>
                             <TypingAnimation portugues={portugues}/>                            
@@ -104,7 +104,7 @@ const RightGuide = ({portugues , setCurrentPage, currentPage, scrollData} : Righ
                         <span className={`bg-white h-[1px] w-[25%]`}></span>
                     </div>
                 </div>
-                <div className="h-full w-full row-start-4 row-end-6 col-start-1 col-end-1 flex items-center justify-center">
+                <div className="hidden sm:flex h-full w-full row-start-4 row-end-6 col-start-1 col-end-1 items-center justify-center">
                     <div className="flex flex-col h-full w-full justify-start align-top justify-items-start items-center">
                         <h1 className="rotated-text text-xl h-full w-[150px] flex justify-end align-end items-center whitespace-nowrap font-normal ">{portugues ? "ROLE ABAIXO" : "SCROLL DOWN"}</h1>
                         <div className="w-0.5 h-[100%] bg-white mt-2" /> 

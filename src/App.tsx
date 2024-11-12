@@ -17,7 +17,6 @@ function App() {
         }}        
       />
 
-      {/* Main content with LandingPage component */}
       <div className="relative z-20 h-full w-full">
         <LandingPage />
       </div>
