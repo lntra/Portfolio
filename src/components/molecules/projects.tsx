@@ -114,7 +114,7 @@ const Projects = ({portugues , currentPage , setCurrentPage, scrollData} : Right
                                         </div>
                                     </a>
                                 </div>
-                                <a href='https://github.com/lntra/Paper-Cook'  className='hidden lg:block group row-start-2 row-end-2 col-start-7 col-end-13 h-full w-full'>
+                                <a href='https://github.com/lntra/NexVips'  className='hidden lg:block group row-start-2 row-end-2 col-start-7 col-end-13 h-full w-full'>
                                     <div className='w-full h-full flex justify-start'>
                                         <img className='grayscale-[1] transition-all duration-300 ease-in-out group-hover:grayscale-0 border-t-[1px] z-10 h-[90%] rounded-3xl border-l-[1px] border-white' src={githubalt} alt="" />
                                          <div 
@@ -123,24 +123,28 @@ const Projects = ({portugues , currentPage , setCurrentPage, scrollData} : Right
                                     </div>
                                 </a>   
                                 <div className='hidden row-start-2 row-end-2 p-7 col-start-1 z-20 col-end-8 h-full w-full lg:flex align-middle items-center'>
-                                    <a href='https://github.com/lntra/Paper-Cook' className='w-full h-fit bg-pf-crimsonbg border-b-2 border-pf-darkestred rounded-3xl'
+                                    <a href='https://github.com/lntra/NexVips' className='w-full h-fit bg-pf-crimsonbg border-b-2 border-pf-darkestred rounded-3xl'
                                     style={{ backgroundColor: 'rgba(55, 6, 23, 0.9)' }}
                                     >
                                         <div className='flex opacity-100 flex-col h-full justify-center align-top items-end p-4'>
-                                            <h1 className='text-4xl font-bold'>Paper Cook</h1>
+                                            <h1 className='text-4xl font-bold'>Nexvips</h1>
                                             <div className='flex gap-2'>
                                                 <div className='px-2 py-1 text-sm bg-pf-black rounded-xl'>
-                                                    <p>React Native</p>
+                                                    <p>React.js</p>
+                                                </div>
+                                                <div className='px-2 py-1 text-sm bg-pf-black rounded-xl'>
+                                                    <p>Next.js</p>
                                                 </div>
                                                 <div className='px-2 py-1 text-sm bg-pf-black rounded-xl'>
                                                     <p>Typescript</p>
                                                 </div>
                                             </div>
                                             <p className='text-base text-right'>
-                                                {portugues 
-                                                ? "Um projeto disponível em mobile sobre culinária, lida com criações de receitas, usuários e seus perfis"
-                                                : "A mobile focused project focused on culinary exploration, with features for recipe creation and personalized user profiles."
-                                                }                                                 </p>
+                                                {
+                                                    portugues
+                                                        ? "Uma landing page de fintech desenvolvida para promover um serviço de bots voltado a clientes do Telegram."
+                                                        : "A fintech landing page designed to promote a bot service tailored for Telegram users."
+                                                }                                              </p>
                                         </div>
                                     </a>
                                 </div>
